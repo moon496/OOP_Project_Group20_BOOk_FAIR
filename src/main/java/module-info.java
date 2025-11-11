@@ -1,4 +1,4 @@
-module com.group20.oop_project_group20_book_fair {
+module com.group.oop_project_group20_book_fair {
     requires javafx.controls;
     requires javafx.fxml;
 
