@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.group20.oop_project_group20_book_fair.screenSwitcher.switchTo;
+
 public class SearchBookStallController {
     @javafx.fxml.FXML
     private TextField Entercatagory;
@@ -82,7 +84,12 @@ public class SearchBookStallController {
 
     @javafx.fxml.FXML
     public void BackToCD(ActionEvent actionEvent) throws IOException {
-        screenSwitcher.switchTo("Moon/Customer.fxml");
+        switchTo("Moon/Customer.fxml");
 
+    }
+
+    @javafx.fxml.FXML
+    public void Next(ActionEvent actionEvent) throws IOException {
+        switchTo("Moon/EntryTicket.fxml");
     }
 }

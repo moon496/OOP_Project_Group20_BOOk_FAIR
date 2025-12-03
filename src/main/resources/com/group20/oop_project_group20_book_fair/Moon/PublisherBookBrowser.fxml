@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="625.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Moon.PublisherBookBrowserController">
+<AnchorPane prefHeight="625.0" prefWidth="638.0" style="-fx-background-color: Linen;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Moon.PublisherBookBrowserController">
    <children>
       <Button layoutX="178.0" layoutY="122.0" mnemonicParsing="false" onAction="#BrowseBook" style="-fx-background-color: #89CFF0;" text="Brows Book" />
       <Label layoutX="218.0" layoutY="22.0" text="📖Publisher Book List Browser" textFill="#a1391c">

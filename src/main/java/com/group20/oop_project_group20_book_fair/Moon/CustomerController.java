@@ -20,12 +20,12 @@ public class CustomerController
 
     @javafx.fxml.FXML
     public void meetAuthor(ActionEvent actionEvent) throws IOException {
-        switchTo("Moon/MeetAuthor.fxml");
+        switchTo("Moon/Meet Author.fxml");
     }
 
     @javafx.fxml.FXML
     public void seminarTime(ActionEvent actionEvent) throws IOException {
-        switchTo("Moon/EventTime.fxml");
+        switchTo("Moon/SeminarEvent .fxml");
     }
 
     @javafx.fxml.FXML
@@ -35,7 +35,7 @@ public class CustomerController
 
     @javafx.fxml.FXML
     public void complain(ActionEvent actionEvent) throws IOException {
-        switchTo("Moon/Complain.fxml");
+        switchTo("Moon/ComplainSecurityOfficer.fxml");
     }
 
     @javafx.fxml.FXML

@@ -1,14 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.group20.oop_project_group20_book_fair.Moon.MeetAuthorController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="629.0" prefWidth="753.0" style="-fx-background-color: Linen;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Moon.MeetAuthorController">
+   <children>
+      <Label alignment="CENTER" layoutX="252.0" layoutY="27.0" prefHeight="31.0" prefWidth="227.0" text="Meet the Author Events" textFill="#a31f1f">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="78.0" prefHeight="261.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="Authorcol" prefWidth="112.66665363311768" text="Author Name" />
+          <TableColumn fx:id="Eventcol" prefWidth="105.3333511352539" text="Event Date " />
+            <TableColumn fx:id="Timecol" prefWidth="98.66667175292969" text="Event Time " />
+            <TableColumn fx:id="Vanue" prefWidth="94.0" text="Vanue" />
+        </columns>
+      </TableView>
+      <Label layoutX="538.0" layoutY="53.0" prefHeight="49.0" prefWidth="175.0" text="Confirm Registration">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="157.0" layoutY="358.0" mnemonicParsing="false" onAction="#Register" prefHeight="25.0" prefWidth="87.0" text="Register">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="449.0" layoutY="119.0" text="Your Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namefield" layoutX="543.0" layoutY="116.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="452.0" layoutY="170.0" text="Event Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eventfield" layoutX="543.0" layoutY="168.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="451.0" layoutY="220.0" text="Event Time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timefield" layoutX="543.0" layoutY="217.0" prefHeight="25.0" prefWidth="175.0" />
+      <ChoiceBox fx:id="vanue" layoutX="549.0" layoutY="270.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="463.0" layoutY="273.0" text="Vanue ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="654.0" layoutY="333.0" mnemonicParsing="false" onAction="#Confirm" text="Confirm" />
+      <Button layoutX="512.0" layoutY="333.0" mnemonicParsing="false" onAction="#Cancle" text="Cancle" />
+      <VBox fx:id="RegiBox" layoutX="38.0" layoutY="403.0" prefHeight="215.0" prefWidth="265.0" style="-fx-border-color: red;">
+         <children>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="263.0" text="Registration Result Page">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" prefHeight="51.0" prefWidth="263.0" text="Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" prefHeight="62.0" prefWidth="263.0" text="EventDate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" prefHeight="50.0" prefWidth="263.0" text="EventTime">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="312.0" layoutY="445.0" prefHeight="20.0" prefWidth="115.0" text="Give Feedback">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="431.0" layoutY="515.0" mnemonicParsing="false" onAction="#Submitfeedback" text="Submit Feedback" />
+      <Label fx:id="textview" layoutX="611.0" layoutY="408.0" prefHeight="94.0" prefWidth="138.0" style="-fx-border-color: blue;" text="Label" />
+      <Button layoutX="347.0" layoutY="580.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="87.0" text="&lt;&lt;Back" />
+      <Button layoutX="480.0" layoutY="580.0" mnemonicParsing="false" onAction="#Dashboard" prefHeight="25.0" prefWidth="101.0" text="Dashboard" />
+      <Button layoutX="634.0" layoutY="580.0" mnemonicParsing="false" onAction="#Next" prefHeight="25.0" prefWidth="87.0" text="Next&gt;&gt;" />
+      <TextField fx:id="feedback" layoutX="432.0" layoutY="406.0" prefHeight="94.0" prefWidth="175.0" />
+   </children>
 </AnchorPane>

@@ -46,7 +46,8 @@ public class EntryTicketController
 
     @javafx.fxml.FXML
     public void Next(ActionEvent actionEvent) throws IOException {
-        switchTo("Moon/SearchBookStall.fxml");
+
+        switchTo("Moon/PublisherBookBrowser.fxml");
     }
 
     @javafx.fxml.FXML
@@ -56,7 +57,8 @@ public class EntryTicketController
 
     @javafx.fxml.FXML
     public void Back(ActionEvent actionEvent) throws IOException {
-        switchTo("Moon/PublisherBookBrowser.fxml");
+        switchTo("Moon/SearchBookStall.fxml");
+
     }
 
     @javafx.fxml.FXML
@@ -73,24 +75,24 @@ public class EntryTicketController
                 passfield.getText().isEmpty()) {
 
             Textview.setText("Please fill all payment fields!");
-            Textview.setStyle("-fx-text-fill: red;");
+
             paymentValidated = false;
             return;
         }
         if (Numberfield.getText().length() < 14) {
             Textview.setText("Invalid card number!");
-            Textview.setStyle("-fx-text-fill: red;");
+
             paymentValidated = false;
             return;
         }
         if (passfield.getText().length() != 3) {
             Textview.setText("Invalid CVV!");
-            Textview.setStyle("-fx-text-fill: red;");
+
             paymentValidated = false;
             return;
         }
         Textview.setText("Payment Validated Successfully!");
-        Textview.setStyle("-fx-text-fill: green;");
+
         paymentValidated = true;
 
     }
@@ -99,7 +101,7 @@ public class EntryTicketController
     public void BuyTicket(ActionEvent actionEvent) {
         if (!paymentValidated) {
             Textview.setText("Please validate payment first!");
-            Textview.setStyle("-fx-text-fill: red;");
+
             return;
         }
         Random random = new Random();
@@ -117,6 +119,6 @@ public class EntryTicketController
         TicketBox.setVisible(true);
 
         Textview.setText("Ticket Generated Successfully!");
-        Textview.setStyle("-fx-text-fill: green;");
+
     }
 }

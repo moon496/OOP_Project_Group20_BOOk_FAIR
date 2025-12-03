@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.group20.oop_project_group20_book_fair.Moon.ComplainController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Linen;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Moon.ComplainSecurityController">
+   <children>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="14.0" prefHeight="28.0" prefWidth="299.0" text="Submit Security Complaint" textFill="#b31b1b">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="62.0" text="Report a Security Issue" textFill="#1c948e">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="108.0" text="Issue Type:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="168.0" text="Report To:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="234.0" text="Location/Booth Number:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="73.0" text="Complaint Details:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="details" layoutX="386.0" layoutY="67.0" prefHeight="183.0" prefWidth="200.0" promptText="enter complaint details " />
+      <ComboBox fx:id="issueBox" layoutX="106.0" layoutY="104.0" prefWidth="150.0" />
+      <ComboBox fx:id="ReportBox" layoutX="106.0" layoutY="163.0" prefWidth="150.0" />
+      <TextField fx:id="boothNum" layoutX="47.0" layoutY="267.0" prefHeight="55.0" prefWidth="322.0" promptText="enter booth number/location" />
+      <Button layoutX="402.0" layoutY="270.0" mnemonicParsing="false" onAction="#Submit" style="-fx-background-color: #4f9f27;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="514.0" layoutY="270.0" mnemonicParsing="false" onAction="#Clear" style="-fx-background-color: #cc1e1e;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="271.0" layoutY="353.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #672c2c;" text="&lt;&lt;Back" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="386.0" layoutY="353.0" mnemonicParsing="false" onAction="#Dashboard" style="-fx-background-color: #b79d34;" text="Dashboard" textFill="#f2efe9">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="514.0" layoutY="353.0" mnemonicParsing="false" onAction="#Logout" style="-fx-background-color: #39a0d0;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
