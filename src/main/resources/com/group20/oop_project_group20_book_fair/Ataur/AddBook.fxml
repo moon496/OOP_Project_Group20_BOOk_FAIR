@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Ataur.AddBookController">
+   <children>
+      <Button layoutX="467.0" layoutY="348.0" mnemonicParsing="false" onAction="#nextbutton" prefHeight="26.0" prefWidth="96.0" text="Next" />
+      <Button layoutX="61.0" layoutY="348.0" mnemonicParsing="false" onAction="#previousbutton" prefHeight="26.0" prefWidth="96.0" text="Previous" />
+      <Button layoutX="228.0" layoutY="348.0" mnemonicParsing="false" onAction="#backtodashboard" prefHeight="26.0" prefWidth="143.0" text="Back to Dashboard" />
+      <Label alignment="CENTER" layoutY="31.0" prefHeight="61.0" prefWidth="600.0" text="Add New Books">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="71.0" prefHeight="44.0" prefWidth="258.0" text="Fill up the form to add new books in Inventory" />
+      <Label layoutX="61.0" layoutY="137.0" prefHeight="26.0" prefWidth="96.0" text="Book Name" />
+      <Label layoutX="61.0" layoutY="173.0" prefHeight="26.0" prefWidth="96.0" text="Author Name" />
+      <Label layoutX="61.0" layoutY="249.0" prefHeight="26.0" prefWidth="96.0" text="Price" />
+      <Label layoutX="61.0" layoutY="211.0" prefHeight="26.0" prefWidth="96.0" text="Catagory" />
+      <TextField fx:id="addbookname" layoutX="236.0" layoutY="137.0" prefHeight="26.0" prefWidth="208.0" />
+      <TextField fx:id="addauthorname" layoutX="236.0" layoutY="173.0" prefHeight="26.0" prefWidth="208.0" />
+      <TextField fx:id="addprice" layoutX="236.0" layoutY="249.0" prefHeight="26.0" prefWidth="208.0" />
+      <ComboBox fx:id="bookcatagorycb" layoutX="235.0" layoutY="211.0" prefHeight="26.0" prefWidth="208.0" />
+      <Button layoutX="307.0" layoutY="282.0" mnemonicParsing="false" onAction="#plusbutton" prefHeight="26.0" prefWidth="63.0" text="+" />
+      <Button layoutX="236.0" layoutY="282.0" mnemonicParsing="false" onAction="#minusbutton" prefHeight="26.0" prefWidth="63.0" text="-" />
+      <Button layoutX="379.0" layoutY="282.0" mnemonicParsing="false" onAction="#resetbutton" prefHeight="26.0" prefWidth="63.0" text="Reset" />
+      <Label fx:id="showinputdata" alignment="CENTER" layoutX="481.0" layoutY="135.0" prefHeight="130.0" prefWidth="87.0" style="-fx-border-color: grey;;" text="Label" />
+      <Button layoutX="481.0" layoutY="282.0" mnemonicParsing="false" onAction="#savebutton" prefHeight="26.0" prefWidth="87.0" text="Save" />
+   </children>
+</AnchorPane>

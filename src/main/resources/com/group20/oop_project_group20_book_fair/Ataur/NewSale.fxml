@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Ataur.NewSaleController">
+   <children>
+      <Label alignment="CENTER" layoutY="50.0" prefHeight="68.0" prefWidth="600.0" text="New sale books">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="134.0" prefHeight="38.0" prefWidth="182.0" text="Books List">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="45.0" layoutY="211.0" text="Quantity:" />
+      <TextField fx:id="quantitynewsale" layoutX="45.0" layoutY="248.0" />
+      <Button alignment="CENTER" layoutX="45.0" layoutY="288.0" mnemonicParsing="false" onAction="#addtocart" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: silver;; -fx-border-color: grey;;" text="Add to Cart" />
+      <Button alignment="CENTER" layoutX="45.0" layoutY="341.0" mnemonicParsing="false" onAction="#previousnewsale" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: silver;; -fx-border-color: grey;;" text="Previous" />
+      <Button alignment="CENTER" layoutX="223.0" layoutY="341.0" mnemonicParsing="false" onAction="#backtodashboardnewsale" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: silver;; -fx-border-color: grey;;" text="Back to Dashboard" />
+      <Button alignment="CENTER" layoutX="440.0" layoutY="341.0" mnemonicParsing="false" onAction="#nextnewsale" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: silver;; -fx-border-color: grey;;" text="Next" />
+      <Label fx:id="labelnewsale" layoutX="299.0" layoutY="153.0" prefHeight="141.0" prefWidth="254.0" style="-fx-border-color: grey;;" />
+      <ComboBox fx:id="comboxCBnewsale" layoutX="45.0" layoutY="172.0" prefHeight="28.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>
