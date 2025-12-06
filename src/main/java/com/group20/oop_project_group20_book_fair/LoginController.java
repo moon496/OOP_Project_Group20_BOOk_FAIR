@@ -40,6 +40,13 @@ public class LoginController {
         if ((UserInput.getValue().equals("Publisher")) && (password.getText().equals("23456"))) {
             screenSwitcher.switchTo("Moon/Publisher.fxml");
         }
+        if ((UserInput.getValue().equals("Stall Manager")) && (password.getText().equals("12345"))) {
+            screenSwitcher.switchTo("Ataur/StallManagerDashboard.fxml");
+        }
+
+        if ((UserInput.getValue().equals("Security Officer")) && (password.getText().equals("12345"))) {
+            screenSwitcher.switchTo("Ataur/SecurityOfficerDashboard.fxml");
+        }
 
         else {
 
