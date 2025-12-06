@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewinventory" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Ataur.ViewInventoryController">
+
+    <children>
+        <Label alignment="CENTER" layoutY="31.0" prefHeight="53.0" prefWidth="600.0" text="View Inventory/Stock list">
+            <font>
+                <Font name="Algerian" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="204.0" layoutY="85.0" text="Show Stock Books list &amp; details here" />
+
+        <TableView fx:id="inventoryTable" layoutX="14.0" layoutY="128.0" prefHeight="200.0" prefWidth="227.0">
+            <columns>
+                <TableColumn fx:id="bookNameColumn" prefWidth="75.0" text="Book Name" />
+                <TableColumn fx:id="authorColumn" prefWidth="75.0" text="Author" />
+                <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="397.0" layoutY="128.0" prefHeight="29.0" prefWidth="144.0" text="Search Books" />
+        <TextField fx:id="searchBooksField" layoutX="397.0" layoutY="158.0" prefHeight="18.0" prefWidth="193.0" />
+
+        <Button layoutX="397.0" layoutY="187.0" mnemonicParsing="false" onAction="#clickToShowResult" prefHeight="26.0" prefWidth="193.0" text="Click to show result" />
+
+        <Button layoutX="215.0" layoutY="359.0" mnemonicParsing="false" onAction="#stallManagerView" prefHeight="26.0" prefWidth="193.0" text="Back to Dashboard" />
+
+        <Button layoutX="494.0" layoutY="359.0" mnemonicParsing="false" onAction="#nextAddNewBook" prefHeight="26.0" prefWidth="97.0" text="Next" />
+
+        <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#previousView" prefHeight="26.0" prefWidth="98.0" text="Previous" />
+
+        <Label fx:id="showDataLabel" layoutX="397.0" layoutY="228.0" prefHeight="66.0" prefWidth="193.0" style="-fx-border-color: grey;" />
+
+    </children>
+</AnchorPane>
