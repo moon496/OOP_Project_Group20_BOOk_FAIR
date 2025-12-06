@@ -19,5 +19,8 @@ module com.group20.oop_project_group20_book_fair {
     opens com.group20.oop_project_group20_book_fair.Moon to javafx.fxml;
     exports com.group20.oop_project_group20_book_fair.Moon;
 
+    opens com.group20.oop_project_group20_book_fair.Ataur to javafx.fxml;
+    exports com.group20.oop_project_group20_book_fair.Ataur;
+
 
 }

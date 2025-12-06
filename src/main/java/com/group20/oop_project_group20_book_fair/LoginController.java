@@ -22,7 +22,7 @@ public class LoginController {
 
     @javafx.fxml.FXML
     public void initialize() {
-        UserInput.getItems().addAll("Customer", "Publisher", "Security Officer ", "Stall Manager", "Organizer", "Food Stall Manager ");
+        UserInput.getItems().addAll("Customer", "Publisher", "Security Officer", "Stall Manager", "Organizer", "Food Stall Manager ");
 
     }
 
