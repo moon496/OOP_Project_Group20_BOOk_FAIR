@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         screenSwitcher.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Bookfair");
         stage.setScene(scene);
         stage.show();
     }

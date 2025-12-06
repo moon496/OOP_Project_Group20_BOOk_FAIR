@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.bookfair.app.controllers.FoodStallController">
+
+    <top>
+        <ToolBar>
+            <Button fx:id="btnLogout" text="Logout" onAction="#onLogout"/>
+            <Label text="Food Stall Manager - Book Fair (User 6)"
+                   style="-fx-font-size: 16px; -fx-padding: 0 0 0 20;"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <TabPane>
+
+
+            <Tab text="Stall Registration">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Owner Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtOwnerName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Stall Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtStallName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Contact:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtContact" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                    </GridPane>
+
+                    <HBox spacing="10">
+                        <Button text="Register" onAction="#onRegisterStall"/>
+                        <Button text="Approve" onAction="#onApprove"/>
+                        <Button text="Reject" onAction="#onReject"/>
+                        <Button text="Update Contact" onAction="#onUpdateContact"/>
+                    </HBox>
+
+                    <TableView fx:id="tblRegistrations" prefHeight="220">
+                        <columns>
+                            <TableColumn fx:id="colOwner" text="Owner" prefWidth="150"/>
+                            <TableColumn fx:id="colStall" text="Stall" prefWidth="150"/>
+                            <TableColumn fx:id="colContact" text="Contact" prefWidth="150"/>
+                            <TableColumn fx:id="colStatus" text="Status" prefWidth="100"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Messaging">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="Message to Stall Owners:"/>
+                    <TextArea fx:id="txtMessage" prefRowCount="3"/>
+                    <Button text="Send Message" onAction="#onSendMessage"/>
+                    <Label text="Message Log:"/>
+                    <ListView fx:id="listMessages" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Menu Review">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="New Menu Item:"/>
+                    <TextField fx:id="txtMenuItem"/>
+                    <HBox spacing="10">
+                        <Button text="Add Item" onAction="#onAddMenuItem"/>
+                        <Button text="Approve" onAction="#onApproveMenu"/>
+                        <Button text="Request Change" onAction="#onRequestChange"/>
+                    </HBox>
+                    <Label text="Menu Submissions:"/>
+                    <ListView fx:id="listMenus" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Payments">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Stall Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtPayStall" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Amount:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtPayAmount" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Date:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtPayDate" GridPane.rowIndex="2" GridPane.columnIndex="1"
+                                   promptText="e.g. 2025-02-21"/>
+                    </GridPane>
+                    <Button text="Add Payment" onAction="#onAddPayment"/>
+
+                    <TableView fx:id="tblPayments" prefHeight="220">
+                        <columns>
+                            <TableColumn fx:id="colPayStall" text="Stall" prefWidth="150"/>
+                            <TableColumn fx:id="colPayAmount" text="Amount" prefWidth="100"/>
+                            <TableColumn fx:id="colPayDate" text="Date" prefWidth="120"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Layout">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Stall Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtLayoutStall" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Location:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtLayoutLocation" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                                   promptText="e.g. Block A-12"/>
+                    </GridPane>
+                    <Button text="Assign Layout" onAction="#onAssignLayout"/>
+                    <Label text="Layout Assignments:"/>
+                    <ListView fx:id="listLayout" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+            <Tab text="Stall Feedback">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="New Feedback:"/>
+                    <TextField fx:id="txtFeedbackFromStall"/>
+                    <Button text="Add Feedback" onAction="#onAddStallFeedback"/>
+                    <Label text="Feedback List:"/>
+                    <ListView fx:id="listStallFeedback" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+        </TabPane>
+    </center>
+</BorderPane>

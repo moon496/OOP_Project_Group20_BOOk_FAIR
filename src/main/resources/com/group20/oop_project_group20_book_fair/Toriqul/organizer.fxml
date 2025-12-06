@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.bookfair.app.controllers.OrganizerController">
+
+    <top>
+        <ToolBar>
+            <Button fx:id="btnLogout" text="Logout" onAction="#onLogout"/>
+            <Label text="Organizer - Book Fair Management (User 5)"
+                   style="-fx-font-size: 16px; -fx-padding: 0 0 0 20;"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <TabPane>
+
+
+            <Tab text="Venue Selection">
+                <ScrollPane fitToWidth="true">
+                    <content>
+                        <VBox spacing="10">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+
+                            <GridPane hgap="10" vgap="10">
+                                <Label text="Venue Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtVenueName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                                <Label text="Event Type:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtVenueEventType" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                                <Label text="Location:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtVenueLocation" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                                <Label text="Capacity:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtVenueCapacity" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                            </GridPane>
+
+                            <Button text="Save Venue" onAction="#onSaveVenue"/>
+
+                            <TableView fx:id="tblVenues" prefHeight="220">
+                                <columns>
+                                    <TableColumn fx:id="colVenueName" text="Name" prefWidth="150"/>
+                                    <TableColumn fx:id="colVenueType" text="Event Type" prefWidth="120"/>
+                                    <TableColumn fx:id="colVenueLocation" text="Location" prefWidth="150"/>
+                                    <TableColumn fx:id="colVenueCapacity" text="Capacity" prefWidth="80"/>
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </Tab>
+
+
+            <Tab text="Maintain Stall">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Stall No:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtStallNo" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Stall Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtStallName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Owner Name:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtStallOwner" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                    </GridPane>
+                    <Button text="Add Stall" onAction="#onAddStall"/>
+                    <TableView fx:id="tblStalls" prefHeight="220">
+                        <columns>
+                            <TableColumn fx:id="colStallNo" text="Stall No" prefWidth="100"/>
+                            <TableColumn fx:id="colStallName" text="Name" prefWidth="150"/>
+                            <TableColumn fx:id="colStallOwner" text="Owner" prefWidth="150"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Publicity">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="Publicity percentage for book fair:"/>
+                    <Slider fx:id="sldPublicity" min="0" max="100" value="40"
+                            showTickLabels="true" showTickMarks="true"/>
+                    <Label fx:id="lblPublicityValue" text="40%"/>
+                    <Button text="Show Publicity" onAction="#onShowPublicity"/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Service">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Service Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtServiceName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                        <Label text="Customer Count:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtServiceCount" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                    </GridPane>
+                    <Button text="Add Service" onAction="#onAddService"/>
+                    <TableView fx:id="tblServices" prefHeight="220">
+                        <columns>
+                            <TableColumn fx:id="colServiceName" text="Service" prefWidth="180"/>
+                            <TableColumn fx:id="colServiceCount" text="Customers" prefWidth="100"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Financial">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="Investment percentage in fair:"/>
+                    <TextField fx:id="txtInvestmentPercent"/>
+                    <Button text="Save Investment" onAction="#onSaveInvestment"/>
+                    <Label fx:id="lblInvestmentSummary" text="No investment recorded yet."/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Feedback">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="New Feedback:"/>
+                    <TextArea fx:id="txtFeedbackInput" prefRowCount="3"/>
+                    <Button text="Add Feedback" onAction="#onAddFeedback"/>
+                    <Label text="All Feedback:"/>
+                    <ListView fx:id="listFeedback" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Facilities">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="Facility Name:"/>
+                    <TextField fx:id="txtFacilityName"/>
+                    <Button text="Add Facility" onAction="#onAddFacility"/>
+                    <Label text="Facilities Provided:"/>
+                    <ListView fx:id="listFacilities" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="Improvement">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+
+                    <Label text="Improvement Idea:"/>
+                    <TextArea fx:id="txtImprovementIdea" prefRowCount="3"/>
+                    <Button text="Add Idea" onAction="#onAddImprovement"/>
+                    <Label text="Ideas:"/>
+                    <ListView fx:id="listImprovements" prefHeight="220"/>
+                </VBox>
+            </Tab>
+
+        </TabPane>
+    </center>
+</BorderPane>

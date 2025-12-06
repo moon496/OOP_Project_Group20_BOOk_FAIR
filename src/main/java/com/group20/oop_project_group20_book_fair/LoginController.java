@@ -40,6 +40,13 @@ public class LoginController {
         if ((UserInput.getValue().equals("Publisher")) && (password.getText().equals("23456"))) {
             screenSwitcher.switchTo("Moon/Publisher.fxml");
         }
+        if ((UserInput.getValue().equals("Food Stall Manager")) && (password.getText().equals("1234"))) {
+            screenSwitcher.switchTo("Moon/Publisher.fxml");
+        }
+        if ((UserInput.getValue().equals("Organizer")) && (password.getText().equals("1234"))) {
+            screenSwitcher.switchTo("Moon/Publisher.fxml");
+        }
+
 
         else {
 
