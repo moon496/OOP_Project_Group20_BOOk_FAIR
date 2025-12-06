@@ -6,7 +6,7 @@ public class StallRegistration {
     private String ownerName;
     private String stallName;
     private String contact;
-    private String status; // PENDING / APPROVED / REJECTED
+    private String status;
 
     public StallRegistration(String id, String ownerName,
                              String stallName, String contact, String status) {
