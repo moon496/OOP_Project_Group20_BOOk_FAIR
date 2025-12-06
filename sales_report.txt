@@ -1,0 +1,9 @@
+Sales Report for 01-12-2025
+
+Date: 01-12-2025
+Book Title: Book A
+Quantity: 10
+Price: 50.00
+Total: 500.00
+-----------------------------------------
+

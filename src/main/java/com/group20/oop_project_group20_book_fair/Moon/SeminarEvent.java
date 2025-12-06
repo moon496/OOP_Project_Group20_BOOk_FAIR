@@ -1,21 +1,32 @@
 package com.group20.oop_project_group20_book_fair.Moon;
 
-import javafx.beans.binding.BooleanExpression;
 import javafx.beans.value.ObservableValue;
 
 public class SeminarEvent {
-   String name;
-   String date;
-    String time;
-    int seats;
-    String type;
+    private String name, date, time, type, venue;  // ✅ Add venue
+    private int seats;
 
-    public SeminarEvent(String name,String date,String time,int seats,String type){
+    // Update constructor
+    public SeminarEvent(String name, String date, String time,
+                        int seats, String type) {
         this.name = name;
         this.date = date;
         this.time = time;
+        this.venue = venue;  // ✅
         this.seats = seats;
-        this.type=type;
+        this.type = type;
+    }
+
+    public String getVenue() {
+        return venue;
+    }
+
+    public void setVenue(String venue) {
+        this.venue = venue;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 
     public String getName() {

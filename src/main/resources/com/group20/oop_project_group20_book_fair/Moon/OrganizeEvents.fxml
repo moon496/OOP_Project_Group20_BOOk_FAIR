@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="914.0" style="-fx-background-color: Linen;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group20.oop_project_group20_book_fair.Moon.OrganizerEventController">
+   <children>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="6.0" prefHeight="41.0" prefWidth="592.0" text="Organize Events (Seminar &amp; Meet the Author)" textFill="#c01d1d">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="75.0" prefHeight="41.0" prefWidth="149.0" text="Select Event Type:">
+         <font>
+            <Font name="Times New Roman Italic" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="EventBox" layoutX="168.0" layoutY="83.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="14.0" layoutY="129.0" text="Event Topic / Author Name:">
+         <font>
+            <Font name="Times New Roman Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namefield" layoutX="203.0" layoutY="126.0" />
+      <Label layoutX="74.0" layoutY="174.0" text="Date:">
+         <font>
+            <Font name="Times New Roman Italic" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="147.0" layoutY="171.0" />
+      <Label layoutX="64.0" layoutY="210.0" text="Time:">
+         <font>
+            <Font name="Times New Roman Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="time" layoutX="147.0" layoutY="207.0" />
+      <Label layoutX="60.0" layoutY="260.0" prefHeight="11.0" prefWidth="45.0" text="Venue:">
+         <font>
+            <Font name="Times New Roman Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="vanue" layoutX="147.0" layoutY="247.0" />
+      <Label fx:id="textfield" layoutX="378.0" layoutY="71.0" prefHeight="109.0" prefWidth="158.0" style="-fx-border-color: pink;">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="355.0" layoutY="220.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="466.0" layoutY="220.0" mnemonicParsing="false" onAction="#clear" text="Clear">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="182.0" layoutY="346.0" mnemonicParsing="false" onAction="#back" text="&lt;&lt;Back">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="438.0" layoutY="346.0" mnemonicParsing="false" onAction="#dashboard" text="Dashboard">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="795.0" layoutY="346.0" mnemonicParsing="false" onAction="#logout" text="Logout">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="Tableview" layoutX="543.0" layoutY="61.0" prefHeight="213.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="NameCol" prefWidth="114.6666259765625" text="Event/AuthorName" />
+          <TableColumn fx:id="DateCol" prefWidth="70.6666259765625" text="EventDate" />
+            <TableColumn fx:id="TimeCol" prefWidth="75.33343505859375" text="EventTime" />
+            <TableColumn fx:id="VanueCol" prefWidth="54.0" text="Vanue" />
+            <TableColumn fx:id="SeatCol" prefWidth="52.6666259765625" text="Seat" />
+        </columns>
+      </TableView>
+      <Button layoutX="401.0" layoutY="270.0" mnemonicParsing="false" onAction="#loadTable" text="Load">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="44.0" layoutY="308.0" text="Seat Number:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="seatNo" layoutX="147.0" layoutY="295.0" />
+   </children>
+</AnchorPane>

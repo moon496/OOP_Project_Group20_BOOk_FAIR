@@ -4,6 +4,11 @@ module com.group20.oop_project_group20_book_fair {
     requires javafx.graphics;
     requires javafx.base;
     requires java.desktop;
+    requires jdk.jfr;
+
+
+
+    //requires com.group20.oop_project_group20_book_fair;
     //requires com.group20.oop_project_group20_book_fair;
     //requires com.group20.oop_project_group20_book_fair;
 

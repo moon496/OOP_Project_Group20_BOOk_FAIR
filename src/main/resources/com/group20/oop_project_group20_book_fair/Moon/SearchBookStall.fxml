@@ -11,7 +11,7 @@
             <Font name="Times New Roman Bold Italic" size="22.0" />
          </font>
       </Label>
-      <TextField fx:id="Entercatagory" layoutX="60.0" layoutY="81.0" prefHeight="44.0" prefWidth="320.0" promptText="Enter category (eg: Fiction , Programming ,Science )" />
+      <TextField fx:id="Entercatagory" layoutX="121.0" layoutY="81.0" prefHeight="44.0" prefWidth="259.0" promptText="Enter category (eg: Fiction , Programming ,Science )" />
       <Button layoutX="433.0" layoutY="81.0" mnemonicParsing="false" onAction="#Search" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #89CFF0;" text="🔍Search " textFill="#06021d">
          <font>
             <Font size="18.0" />
@@ -29,5 +29,10 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Label layoutX="39.0" layoutY="95.0" text="Category">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

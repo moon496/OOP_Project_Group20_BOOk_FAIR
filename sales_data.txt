@@ -1,0 +1,20 @@
+Date,BookTitle,Quantity,Price,Total
+01-12-2025,Book A,10,50.00,500.00
+02-12-2025,Book B,5,50.00,250.00
+03-12-2025,Book C,8,50.00,400.00
+01-11-2025,Harry Potter and the Philosopher's Stone,15,50.00,750.00
+02-11-2025,The Great Gatsby,12,40.00,480.00
+08-11-2025,1984,20,50.00,1000.00
+11-11-2025,Atomic Habits,30,60.00,1800.00
+14-11-2025,Think and Grow Rich,12,40.00,480.00
+04-11-2025,A Brief History of Time,11,60.00,660.00
+07-11-2025,The Selfish Gene,9,50.00,450.00
+13-11-2025,Cosmos,13,60.00,780.00
+16-11-2025,The Origin of Species,7,50.00,350.00
+19-11-2025,Guns, Germs, and Steel,10,50.00,500.00
+21-11-2025,The Silk Roads,8,60.00,480.00
+23-11-2025,A People's History,12,50.00,600.00
+24-11-2025,Design Patterns,18,80.00,1440.00
+25-11-2025,The Pragmatic Programmer,16,70.00,1120.00
+30-11-2025,Charlotte's Web,25,30.00,750.00
+05-12-2025,Unbroken,15,60.00,900.00

@@ -20,9 +20,10 @@
       <TableView fx:id="tableView" layoutX="12.0" layoutY="78.0" prefHeight="261.0" prefWidth="415.0">
         <columns>
           <TableColumn fx:id="Authorcol" prefWidth="112.66665363311768" text="Author Name" />
-          <TableColumn fx:id="Eventcol" prefWidth="105.3333511352539" text="Event Date " />
-            <TableColumn fx:id="Timecol" prefWidth="98.66667175292969" text="Event Time " />
-            <TableColumn fx:id="Vanue" prefWidth="94.0" text="Vanue" />
+          <TableColumn fx:id="Eventcol" prefWidth="70.6666030883789" text="Event Date " />
+            <TableColumn fx:id="Timecol" prefWidth="85.33335876464844" text="Event Time " />
+            <TableColumn fx:id="Vanue" prefWidth="62.6666259765625" text="Vanue" />
+            <TableColumn fx:id="seatCol" prefWidth="82.66667683919269" text="Seat" />
         </columns>
       </TableView>
       <Label layoutX="538.0" layoutY="53.0" prefHeight="49.0" prefWidth="175.0" text="Confirm Registration">

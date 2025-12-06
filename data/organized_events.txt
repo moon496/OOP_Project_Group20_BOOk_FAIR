@@ -1,0 +1,19 @@
+
+AI and Machine Learning,10-12-2025,2:00 PM,BICC Hall A,50,Seminar
+Digital Marketing Basics,14-12-2025,4:00 PM,Book Fair Stage 2,35,Seminar
+Blockchain for Beginners,15-12-2025,3:00 PM,Seminar Room 1,45,Seminar
+Cybersecurity Awareness,19-12-2025,1:00 PM,Seminar Hall 4,20,Seminar
+Creative Writing Workshop,20-12-2025,11:00 AM,Workshop Tent,18,Workshop
+Meet Author Jasim Uddin,12-12-2025,11:00 AM,Shishu Academy,40,Meet-the-Author
+Meet Writer Humayun Kabir,16-12-2025,12:00 PM,Hall 3,60,Meet-the-Author
+Poetry with Nirmalendu Goon,18-12-2025,3:30 PM,Literature Stage,50,Meet-the-Author
+o,2025-12-03,2pm,49,Seminar
+book,2025-12-10,10pm,50,Seminar
+mou,2025-12-04,10am,20,Meet-the-Author
+abc,2025-12-04,10am,20,Meet-the-Author
+abcd,2025-12-05,11am,20,Meet-the-Author
+adb,2025-12-06,10am,20,Meet-the-Author
+kokila,2025-12-06,10am,hall 1,20,Meet-the-Author
+moon,2025-12-06,10am,hall 1,20,Workshop
+moon,2025-12-06,10am,hall 1,20,Meet-the-Author
+a,2025-12-09,10,hall2,20,Seminar

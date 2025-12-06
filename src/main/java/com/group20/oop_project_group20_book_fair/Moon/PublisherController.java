@@ -19,7 +19,7 @@ public class PublisherController
 
     @javafx.fxml.FXML
     public void Discount(ActionEvent actionEvent) throws IOException{
-        screenSwitcher.switchTo("Moon/DiscountAndOffer.fxml");
+        screenSwitcher.switchTo("Moon/Discount&Offer.fxml");
     }
 
     @javafx.fxml.FXML
@@ -29,12 +29,12 @@ public class PublisherController
 
     @javafx.fxml.FXML
     public void BookList(ActionEvent actionEvent) throws IOException{
-        screenSwitcher.switchTo("Moon/BookList.fxml");
+        screenSwitcher.switchTo("Moon/UploadBookList.fxml");
     }
 
     @javafx.fxml.FXML
     public void Popularity(ActionEvent actionEvent) throws IOException{
-        screenSwitcher.switchTo("Moon/TrackBookPopularity.fxml");
+        screenSwitcher.switchTo("Moon/OrganizeEvents.fxml");
     }
 
     @javafx.fxml.FXML
